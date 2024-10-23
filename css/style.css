@@ -73,7 +73,6 @@ li {
 #navBar {
   width: 100%;
   height: 60px;
-  padding: 0 20px;
   position: sticky;
   top: 0;
   z-index: 1;
@@ -90,7 +89,6 @@ li {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
   background-color: rgba(157, 190, 216, 0.68);
   backdrop-filter: blur(6px) saturate(200%);
   -webkit-backdrop-filter: blur(6px) saturate(200%);
@@ -99,13 +97,11 @@ li {
 }
 
 .navbar__ul li {
-  list-style: none;
   margin: 5px 10px;
 }
 
 .navbar__ul li a {
   font-size: 28px;
-  text-decoration: none;
   color: #222121;
   padding: 5px 10px;
   transition: background-color 0.3s ease, color 0.3s ease, border-radius 0.3s ease;
@@ -183,6 +179,13 @@ li {
 }
 
 @media screen and (max-width: 900px) {
+  #navBar {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  #navBar .navbar__ul li {
+    margin: 0;
+  }
   /*-----------AJUSTO ARTICULOS Y CONTENIDO PYTHON-----------*/
   #cards__content--python {
     flex-direction: column;
@@ -193,37 +196,16 @@ li {
   #cards__content--python article a {
     margin-top: 10px;
   }
-  /*-----------AJUSTE DE TABLA RESPONSIVA-----------*/
-  .table-desktop {
-    display: none;
-  }
-  .table-mobile {
-    margin-top: 20px;
-    display: block;
-  }
-  .table-mobile th, .table-mobile td {
-    width: 50%;
-  }
-}
-@media (max-width: 600px) {
-  #navBar {
-    padding: 0 10px;
-  }
-  .navBar__ul {
-    flex-direction: column;
-    align-items: center;
-  }
-  .navBar__ul li {
-    margin: 5px 0;
-  }
-  .navBar__ul li a {
-    font-size: 18px;
-    width: 100%;
-    text-align: center;
-    padding: 5px 2px;
-  }
 }
 @media screen and (max-width: 500px) {
+  #navBar .navbar__ul li {
+    margin: 5px 3px;
+  }
+  #navBar a {
+    font-size: 20px;
+    width: 100%;
+    padding: 2px 2px;
+  }
   /*-----------CORRIJO HEADER Y AJUSTO BOTONES-----------*/
   #header img {
     height: 80px;

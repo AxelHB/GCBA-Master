@@ -1,5 +1,11 @@
 @media screen and (max-width: 900px){
-    
+    #navBar {
+        padding-left: 10px;
+        padding-right: 10px;
+        .navbar__ul li {
+            margin: 0;
+        }
+    }
     /*-----------AJUSTO ARTICULOS Y CONTENIDO PYTHON-----------*/
         #cards__content--python {
             flex-direction: column ;
@@ -11,44 +17,19 @@
                 }
             }
         }
-    /*-----------AJUSTE DE TABLA RESPONSIVA-----------*/
-        .table-desktop {
-            display: none;
-        }
-    
-        .table-mobile {
-            margin-top: 20px;
-            display: block;
-            th , td {
-            width: 50%;
-            }
-        }
-}
-
-    
-@media (max-width: 600px) {
-    #navBar {
-        padding: 0 10px;
-    }
-
-    .navBar__ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .navBar__ul li {
-        margin: 5px 0;
-    }
-
-    .navBar__ul li a {
-        font-size: 18px;
-        width: 100%;
-        text-align: center;
-        padding: 5px 2px;
-    }
 }
 
 @media screen and (max-width: 500px) {
+    #navBar {
+        .navbar__ul li {
+            margin: 5px 3px;
+        }
+        a {
+            font-size: 20px;
+            width: 100%;
+            padding: 2px 2px;
+        }
+    }
     /*-----------CORRIJO HEADER Y AJUSTO BOTONES-----------*/
     #header img {
         height: 80px;
