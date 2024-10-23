@@ -1,0 +1,61 @@
+/*-----------CONTENIDO DE ARTICULOS Y BOTONES-----------*/
+.cards__content--python {
+    width: 80%;
+    height: auto;
+    margin-top: 30px;
+    column-gap: 20px;
+    padding: 0 20px 20px 30px;
+
+    backdrop-filter: blur(6px) saturate(200%);
+    -webkit-backdrop-filter: blur(6px) saturate(200%);
+    background-color: rgba(187, 207, 219, 0.897);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    
+    article {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 10px;
+        
+        /*-----------ESTILOS BOTONES-----------*/
+
+        a {
+            width: 80%;
+        }
+        button {
+            width: 100%;;
+            padding: 17px 10px;
+            border-radius: 50px;
+            cursor: pointer;
+            border: 0;
+            background-color: rgb(223, 210, 27);
+            box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+            letter-spacing: 1px;
+            color: #333;
+            text-transform: uppercase;
+            font-size: clamp(1rem, 1.1vw, 1.3rem);
+            font-weight:bold;
+            transition: all 0.5s ease;
+        
+            &:hover {
+                letter-spacing: 2px;
+                background-color: hsl(224, 68%, 52%);
+                color: hsl(0, 0%, 100%);
+                box-shadow: rgb(93 24 220) 0px 7px 29px 0px;
+            }
+            
+            &:active {
+                letter-spacing: 2px;
+                background-color: hsl(261deg 80% 48%);
+                color: hsl(0, 0%, 100%);
+                box-shadow: rgb(93 24 220) 0px 0px 0px 0px;
+                transform: translateY(10px);
+                transition: 100ms;
+            }
+        }
+        
+    }
+
+}
